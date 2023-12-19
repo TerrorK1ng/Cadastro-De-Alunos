@@ -35,7 +35,10 @@ try: # System developed by Claudir Santos
         getStudentAge = input(f"\nDigite a idade de {getStudentName}: \n")
         if getStudentAge.isdigit():
             convertStudentAgeToInt = int(getStudentAge)
-            calculateAverageNotes()
+            getAverageToAproval = input(f"\nDigite a nota mínima da média para que {getStudentName} seja aprovado(a):\n")
+            if getAverageToAproval.isdigit():
+                formatMinalAverageToAprovalToInt = int(getAverageToAproval)
+                calculateAverageNotes()
         else:
             raise ValueError("Digite um número")
     else:
@@ -44,3 +47,6 @@ try: # System developed by Claudir Santos
 except ValueError as e:
     print("\033[31m|ERRO| ", e)
 finally: print("\n\033[32mPrograma encerrado!\033[m")
+
+# TODO: Requisitar média de aprovação e falar se o aluno foi aprovado ou não.
+# TODO: Método Etec ou escola convencional
