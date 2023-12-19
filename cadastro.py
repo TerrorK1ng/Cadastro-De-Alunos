@@ -15,16 +15,19 @@ try: # System developed by Claudir Santos
                 listValueNotes.append(valueNotes)
             if listValueNotes:
                 calculateAverage = sum(listValueNotes) / len(listValueNotes)
-                formatAverageCalculated = "{:.2f}".format(calculateAverage)
+                formatAverageCalculatedToInt = int(calculateAverage)
+                if formatMinimalAverageToAprovalToInt <= formatAverageCalculatedToInt:
+                    studentStatus = "Aprovado(a)"
+                else: studentStatus = "Reprovado(a)"
+                formatedAverageCalculated = "{:.2f}".format(formatAverageCalculatedToInt)
                 print(f"""
                 \033[34mMédia Final\033[m    
                 Aluno: {getStudentName}\n
                 Idade: {getStudentAge}\n
-                Média: {formatAverageCalculated}\n
-                Situação: -""")
+                Média: {formatedAverageCalculated}\n
+                Situação: {studentStatus}\n""")
         except ValueError:
             print("\n\033[31m|ERRO| Digite um número\033[m")
-
     if selector not in [1, 2]:
         raise ValueError("Selecione uma das opções!")
     if selector == 2:
@@ -37,7 +40,7 @@ try: # System developed by Claudir Santos
             convertStudentAgeToInt = int(getStudentAge)
             getAverageToAproval = input(f"\nDigite a nota mínima da média para que {getStudentName} seja aprovado(a):\n")
             if getAverageToAproval.isdigit():
-                formatMinalAverageToAprovalToInt = int(getAverageToAproval)
+                formatMinimalAverageToAprovalToInt = int(getAverageToAproval)
                 calculateAverageNotes()
         else:
             raise ValueError("Digite um número")
@@ -47,6 +50,5 @@ try: # System developed by Claudir Santos
 except ValueError as e:
     print("\033[31m|ERRO| ", e)
 finally: print("\n\033[32mPrograma encerrado!\033[m")
-
 # TODO: Requisitar média de aprovação e falar se o aluno foi aprovado ou não.
 # TODO: Método Etec ou escola convencional
