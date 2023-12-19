@@ -1,4 +1,4 @@
-try: # System developed by Claudir Santos. Github: http://github.com/#claudir_Dev
+try: # System developed by Claudir Santos
     selector = int(input("""
                     \033[31m Cadastro de alunos - by Claudir\033[m
             \033[32m*Cadastre um aluno e tire a média de sua nota final*\033[m \n
@@ -46,6 +46,3 @@ except ValueError as e:
 
 
 finally: print("\n\033[32mPrograma encerrado!\033[m")
-# TODO: Requisitar média de aprovação e falar se o aluno foi aprovado ou não.
-
-# TODO: Método Etec ou escola convencional
