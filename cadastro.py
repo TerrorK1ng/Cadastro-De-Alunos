@@ -43,6 +43,4 @@ try: # System developed by Claudir Santos
 
 except ValueError as e:
     print("\033[31m|ERRO| ", e)
-
-
 finally: print("\n\033[32mPrograma encerrado!\033[m")
