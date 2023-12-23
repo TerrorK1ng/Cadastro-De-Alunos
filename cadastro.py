@@ -1,6 +1,6 @@
 try: # System developed by Claudir Santos
     selector = int(input("""
-        \033[31m Cadastro de alunos - by Claudir\033[m
+            \033[31m Cadastro de alunos - by Claudir\033[m
     \033[32m*Cadastre um aluno e tire a média de sua nota final*\033[m 
             Selecione uma das opções abaixo: \n
     1- Cadastrar alunos
