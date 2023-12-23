@@ -1,7 +1,8 @@
 try: # System developed by Claudir Santos
     selector = int(input("""
                     \033[31m Cadastro de alunos - by Claudir\033[m
-            \033[32m*Cadastre um aluno e tire a média de sua nota final*\033[m \n
+            \033[32m*Cadastre um aluno e tire a média de sua nota final*\033[m 
+                    Selecione uma das opções abaixo: \n
     1- Cadastrar alunos
     2- Encerrar programa\n
     """))
@@ -38,7 +39,7 @@ try: # System developed by Claudir Santos
         getStudentAge = input(f"\nDigite a idade de {getStudentName}: \n")
         if getStudentAge.isdigit():
             convertStudentAgeToInt = int(getStudentAge)
-            getAverageToAproval = input(f"\nDigite a nota mínima da média para que {getStudentName} seja aprovado(a):\n")
+            getAverageToAproval = input(f"\nDigite a média necessária para que {getStudentName} seja aprovado(a):\n")
             if getAverageToAproval.isdigit():
                 formatMinimalAverageToAprovalToInt = int(getAverageToAproval)
                 calculateAverageNotes()
