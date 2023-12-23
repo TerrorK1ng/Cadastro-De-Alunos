@@ -2,7 +2,7 @@
 
 ![preview](.github/exec.gif)
 > Status: Em desenvolvimento ⚠️
-### Execute online: ...
+### Execute online: [Acesse o site](https://replit.com/@ClaudirSantos/Cadastro-De-Alunos)
 <br>
 
 # 📝 Sobre
