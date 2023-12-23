@@ -8,7 +8,6 @@
 # 📝 Sobre
 Este Sistema tem como objetivo auxiliar avaliadores e professores a tirar média da nota de seus alunos de maneira simples e direta. Sistema esse, com uma função de ser um projeto de treino e aplicação de conhecimentos técnicos passados no curso de Python pela instituição Senac SP, no qual eu ainda estou cursando. Conceitos aplcados: Variável acumuladora, lista, verificação de string, loops, funções, while e formatação de strings.
 <br>
-<br>
 
 # 🛠️ Futuras atualizações
 + 1.0 - Mostrar Status de aprovado ou reprovado ✔️
@@ -16,8 +15,6 @@ Este Sistema tem como objetivo auxiliar avaliadores e professores a tirar média
 + 3.0 - Registrar mais de um aluno ❌
 + 4.0 - Adicionar interface grática ❌
 <br>
-<br>
-
 
 # 👨🏾‍💻 Execute na sua máquina
 
