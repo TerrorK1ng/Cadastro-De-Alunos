@@ -39,12 +39,20 @@ try: # System developed by Claudir
         getStudentAge = input(f"\nDigite a idade de {getStudentName}: \n")
         if getStudentAge.isdigit():
             convertStudentAgeToInt = int(getStudentAge)
-            getAverageToAproval = input(f"\nDigite a média necessária para que {getStudentName} seja aprovado(a):\n")
-            if getAverageToAproval.isdigit():
-                formatMinimalAverageToAprovalToInt = int(getAverageToAproval)
-                calculateAverageNotes()
-        else:
-            raise ValueError("Digite um número")
+            getNotesSystem = input(f"""
+    \033[32mDigite o número referente ao sistema de notas que deseja utilizar para tirar a média de \033[m{getStudentName}
+1- Método ETEC(MB/B/R/I/NA) 
+2- Método Escola Municipal(PS, S, NS) 
+3- Escola Estadual (10,9,8,7...)\n\n""")
+            if getNotesSystem.isdigit():
+                getAverageToAproval = input(f"\nDigite a média necessária para que {getStudentName} seja aprovado(a):\n")
+                if getAverageToAproval.isdigit():
+                    formatMinimalAverageToAprovalToInt = int(getAverageToAproval)
+                    calculateAverageNotes()
+                else:
+                    raise ValueError("Digite um número")
+            else: 
+                raise ValueError("Selecione uma das opções!")
     else:
         raise ValueError("Digite o nome do Aluno! \n")
 
